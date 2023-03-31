@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ee457ea-1ec7-41e2-b77b-c6f1778bdf4c" name="Changes" comment="" />
+    <list default="true" id="7ee457ea-1ec7-41e2-b77b-c6f1778bdf4c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +28,9 @@
         <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,6 +55,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-17",
     "last_opened_file_path": "/Users/yannickfumukani/SPrivate/sdev/Projects/springboot-microservices-projects/fraud-micro",
     "node.js.detected.package.eslint": "true",
@@ -51,7 +65,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
     "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "74ce7efddc54355f847d1313678a3f05",
+    "spring.configuration.checksum": "91ec1f9324753048c0096d036a694f86",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -127,6 +141,7 @@
       <workItem from="1680225126805" duration="2765000" />
       <workItem from="1680227901267" duration="3864000" />
       <workItem from="1680231803236" duration="10420000" />
+      <workItem from="1680244283634" duration="3288000" />
     </task>
     <servers />
   </component>
