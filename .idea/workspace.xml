@@ -6,14 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7ee457ea-1ec7-41e2-b77b-c6f1778bdf4c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/creativeslash/CustomerServiceImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
     "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "91ec1f9324753048c0096d036a694f86",
+    "spring.configuration.checksum": "68fd671b88c1fb79a1deccd60a79a45c",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -86,7 +83,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerApplication (1)">
+  <component name="RunManager" selected="Docker.docker-compose.yml.spring-boot: Compose Deployment">
     <configuration name="CustomerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="customer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.creativeslash.CustomerApplication" />
@@ -120,9 +117,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.spring-boot: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="spring-boot" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.spring-boot: Compose Deployment" />
         <item itemvalue="Spring Boot.CustomerApplication (1)" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Spring Boot.CustomerApplication (1)" />
         <item itemvalue="Spring Boot.CustomerApplication" />
       </list>
@@ -141,7 +167,11 @@
       <workItem from="1680225126805" duration="2765000" />
       <workItem from="1680227901267" duration="3864000" />
       <workItem from="1680231803236" duration="10420000" />
-      <workItem from="1680244283634" duration="3288000" />
+      <workItem from="1680244283634" duration="11872000" />
+      <workItem from="1680401659375" duration="11490000" />
+      <workItem from="1680424232620" duration="317000" />
+      <workItem from="1680577926711" duration="2727000" />
+      <workItem from="1680659422479" duration="3156000" />
     </task>
     <servers />
   </component>

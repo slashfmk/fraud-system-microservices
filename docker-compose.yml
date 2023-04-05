@@ -1,7 +1,7 @@
 services:
   postgres:
     container_name: postgres
-    image: postgres
+    image: postgres:latest
     environment:
       POSTGRES_USER: slash
       POSTGRES_PASSWORD: Password7!
