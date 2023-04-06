@@ -25,6 +25,10 @@ public class CustomerServiceImplement implements CustomerService {
                 customerRegistrationRequest.email()
         );
 
+        Optional<Customer> customerExist = this.customerRepository.findByEmail(newCustomer.getEmail());
+
+        if(customerExist.isPresent()) throw new IllegalArgumentException("A user with this email already exist");
+
         this.customerRepository.save(newCustomer);
 
         return newCustomer;
@@ -32,9 +36,11 @@ public class CustomerServiceImplement implements CustomerService {
 
     @Override
     public Customer deleteCustomer(long id) {
+
         Optional<Customer> foundCustomer = this.customerRepository.findById(id);
 
-        if (foundCustomer.isEmpty()) throw new IllegalArgumentException("No user associated with this id");
+        if (foundCustomer.isEmpty())
+            throw new IllegalArgumentException("No user associated with this id");
 
         this.customerRepository.delete(foundCustomer.get());
         return foundCustomer.get();

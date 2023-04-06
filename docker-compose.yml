@@ -1,38 +1,63 @@
 services:
-  postgres:
-    container_name: postgres
-    image: postgres:latest
-    environment:
-      POSTGRES_USER: slash
-      POSTGRES_PASSWORD: Password7!
-      PGDATA: /data/postgres
-    volumes:
-      - postgres:/data/postgres
-    ports:
-      - "5432:5432"
-    networks:
-      - postgres
-    restart: unless-stopped
+#  postgres:
+#    container_name: postgres
+#    image: postgres:alpine3.17
+#    environment:
+#      POSTGRES_USER: root
+#      POSTGRES_PASSWORD: password
+#      POSTGRES_DB: customer
+#      # PGDATA: /data/postgres
+#    volumes:
+#      - ./data/postgres:/data/postgres
+#    ports:
+#      - "5432:5432"
+#    networks:
+#      - postgres
+#    restart: unless-stopped
+#
+#  pgadmin:
+#    container_name: pgadmin
+#    image: dpage/pgadmin4
+#    environment:
+#      PGADMIN_DEFAULT_EMAIL: slashcs7@gmail.com
+#      PGADMIN_DEFAULT_PASSWORD: password
+#      PGADMIN_CONFIG_SERVER_MODE: 'False'
+#    volumes:
+#      - ./data/pgadmin:/var/lib/pgadmin
+#    ports:
+#      - "5050:80"
+#    networks:
+#      - postgres
+#    restart: unless-stopped
 
-  pgadmin:
-    container_name: pgadmin
-    image: dpage/pgadmin4
+  db:
+    container_name: mysqldb
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-slashcs7@gmail.com}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin4}
-      PGADMIN_CONFIG_SERVER_MODE: 'False'
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: customer
     volumes:
-      - pgadmin:/var/lib/pgadmin
+      - ./data/mysql-data/:/var/lib/mysql
     ports:
-      - "5050:80"
+      - 3307:3306
     networks:
-      - postgres
-    restart: unless-stopped
+      - mysql
+
+  adminer:
+    container_name: admirer
+    image: adminer
+    restart: always
+    networks:
+      - mysql
+    ports:
+      - 5050:8080
 
 networks:
-  postgres:
+  mysql:
     driver: bridge
 
-volumes:
-  postgres:
-  pgadmin:
+#volumes:
+#  postgres:
+#  pgadmin:

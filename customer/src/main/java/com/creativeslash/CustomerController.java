@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 
 @Slf4j
 @RequestMapping(path = "api/v1/customers")
@@ -26,6 +27,9 @@ public class CustomerController {
     public ResponseEntity<String> registerCustomer(@RequestBody CustomerRegistrationRequest customer) {
 
         log.info("New customer registered {}", customer);
+
+        var createdCustomer = this.customerService.createCustomer(customer);
+
         return ResponseEntity.status(HttpStatus.OK).body("User created");
     }
 
@@ -35,6 +39,12 @@ public class CustomerController {
 
         var result = this.customerService.deleteCustomer(id);
         return ResponseEntity.status(HttpStatus.OK).body(result);
+    }
+
+    @GetMapping()
+    public ResponseEntity<List<Customer>> getAllCustomers() {
+        var customers = this.customerService.getAllCustomers();
+        return ResponseEntity.status(HttpStatus.OK).body(customers);
     }
 
     @PutMapping()
