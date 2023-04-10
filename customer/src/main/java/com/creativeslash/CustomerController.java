@@ -15,13 +15,11 @@ import java.util.List;
 public class CustomerController {
 
 
-    @Autowired
     private final CustomerServiceImplement customerService;
 
     public CustomerController(CustomerServiceImplement customerService) {
         this.customerService = customerService;
     }
-
 
     @PostMapping()
     public ResponseEntity<String> registerCustomer(@RequestBody CustomerRegistrationRequest customer) {

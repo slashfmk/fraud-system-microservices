@@ -12,13 +12,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(path = "api/v1/fraud")
 public class FraudCheckHistoryController {
 
-    @Autowired
-    private FraudCheckHistoryService fraudCheckHistoryService;
+
+    private final FraudCheckHistoryService fraudCheckHistoryService;
 
     public FraudCheckHistoryController(FraudCheckHistoryService fraudCheckHistoryService) {
         this.fraudCheckHistoryService = fraudCheckHistoryService;
     }
-
 
     @PostMapping()
     public ResponseEntity<String> createFraud(@RequestBody FraudCheckHistory fraudCheckHistory) {

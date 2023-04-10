@@ -9,7 +9,6 @@ import java.util.Optional;
 @Service
 public class CustomerServiceImplement implements CustomerService {
 
-    @Autowired
     private final CustomerRepository customerRepository;
 
     public CustomerServiceImplement(CustomerRepository customerRepository) {
